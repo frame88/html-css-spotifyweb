@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
 }
+
 /*
 html {
     color: white;
@@ -81,6 +82,11 @@ footer {
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+:root {
+    --playerheight: 100px;
+}
+
 .container {
     background: red;
     width: 100%;
@@ -96,9 +102,8 @@ html {
 
 
 main {
-    background: blue;
     width: 100%;
-    height: calc(100% - (150px));
+    height: calc(100% - (var(--playerheight)));
     overflow: hidden;
 }
 
@@ -108,10 +113,9 @@ main {
     height: 100%;
     background-color: black;
     min-height: 40%;
-    padding-left: 1em;
-    padding-top: 1em;
     color: white;
     line-height: 30px;
+    padding: 1em;
 }
 
 /*_____MAIN NAV TOP_____*/
@@ -124,6 +128,7 @@ main {
 .logo {
     width: 65%;
 }
+
 
 .casetta,.lib,.search {
    width: 12%;
@@ -142,24 +147,53 @@ main {
     list-style: none;
 }
 
+.playlist {
+    overflow: auto;
+}
+
+.firstttchild {
+    display: flex;
+    align-items: center;
+}
+
+.fa-plus-square {
+    margin-right: 0.3em;
+}
+
+
 /*____MAIN NAV BOTTOM___*/
 .main-nav-bottom {
-    width: 100%%;
+    width: 100%;
     height: 20%;
-    background-color: darkorange;
     display: flex;
     flow-direction: flex-end;
     align-items: flex-end;
 }
 
-.fondo .fa-user-circle {
-    font-size: 200%;
+.install img {
+    width: 8%;
 }
 
-hr {
-    width: 80%;
-    margin-left: 15%;
-    margin-right: 15%;
+.install {
+    font-size: 80%;
+}
+
+.user,.install {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+.user span, .install span {
+    margin-left: 0.5em;
+}
+
+.usersvg {
+    background: gray;
+    border-radius: 50%;
+    width: 12%;
 }
 
 .main-section {
@@ -168,14 +202,15 @@ hr {
     height: 100%;
     background-color: darkblue;
     overflow: auto;
-    padding-top: calc(20% + (2em));
+    padding-top: calc(var(--playerheight) + (1em));
     padding-bottom: 2em;
+    display: flex;
 }   
 
 
 .main-call-action {
     width: calc(100% - (20%));
-    height: 20%;
+    height: var(--playerheight);
     position: fixed;
     right: 0;
     top: 0;
@@ -190,7 +225,10 @@ hr {
     border: 2px solid white;
     background-color: rgb(0, 0, 0, 0.3);
     padding: 1em;
-    border-radius: 15%;
+    padding-left: 3em;
+    padding-right: 3em;
+    border-radius: 25px;
+    margin-right: 0.5em;
     align-self: center;
 }
 
@@ -209,19 +247,38 @@ hr {
     width: calc(100% - (45px));
     }
 }
-
+/* 600px, 700px e 1100px */
 /*SMARTPHONE*/
 
 
+.lista-navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.lista-navigator li {
+    list-style: none;
+    display: inline;
+}
+
+.lista-navigator a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
 footer {
-    background: yellow;
+    background: gray;
     width: 100%;
-    height: 150px;
+    height: var(--playerheight);
 }
 
-/* 600px, 700px e 1100px */
 
-.playlist {
-    overflow: auto;
-}
 
