@@ -78,6 +78,9 @@ footer {
 
 */
 
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 .container {
     background: red;
     width: 100%;
@@ -105,19 +108,42 @@ main {
     height: 100%;
     background-color: black;
     min-height: 40%;
+    padding-left: 1em;
+    padding-top: 1em;
+    color: white;
 }
 
+/*_____MAIN NAV TOP_____*/
 .main-nav-top {
     width: 100%;
     height: 80%;
     background-color: red;
 }
 
+.casetta,.lib,.search {
+   width: 20%;
+   vertical-align: middle;
+}
+
+.logo,.category,.playlist {
+    margin-bottom: 1em;
+}
+
+.fa-plus-square {
+    font-size: 200%;
+}
+
+.nomeplaylist li {
+    list-style: none;
+}
+
+/*____MAIN NAV BOTTOM___*/
 .main-nav-bottom {
     width: 100%%;
     height: 20%;
     background-color: darkorange;
 }
+
 
 
 .main-section {
