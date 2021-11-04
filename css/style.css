@@ -78,8 +78,79 @@ footer {
 
 */
 
+.container {
+    background: red;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.clearfix::after {
+    content:'';
+    display: table;
+    clear: both;
+}
 
 
+main {
+    background: blue;
+    width: 100%;
+    height: calc(100% - (150px));
+    overflow: hidden;
+}
+
+.main-nav {
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    min-height: 40%;
+}
+
+.main-nav-top {
+    width: 100%;
+    height: 80%;
+    background-color: red;
+}
+
+.main-nav-bottom {
+    width: 100%%;
+    height: 20%;
+    background-color: darkorange;
+}
 
 
+.main-section {
+    float: left;
+    width: calc(100% - (20%));
+    height: 100%;
+    background-color: darkblue;
+    overflow: hidden;
+}   
 
+@media screen and (max-width: 600px) {
+    .main-nav {
+        width: 45px;
+    }
+
+    .main-section {
+    width: calc(100% - (45px));
+    }   
+}
+
+.main-call-action {
+    width: calc(100% - (20%));
+    height: 20%;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+
+footer {
+    background: yellow;
+    width: 100%;
+    height: 150px;
+}
+
+/* 600px, 700px e 1100px */
