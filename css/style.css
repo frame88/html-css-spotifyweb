@@ -125,8 +125,32 @@ main {
     width: calc(100% - (20%));
     height: 100%;
     background-color: darkblue;
-    overflow: hidden;
+    overflow: auto;
+    padding-top: calc(20% + (2em));
+    padding-bottom: 2em;
 }   
+
+
+.main-call-action {
+    width: calc(100% - (20%));
+    height: 20%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.upgrade {
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+    background-color: rgb(0, 0, 0, 0.3);
+    padding: 1em;
+    border-radius: 15%;
+    align-self: center;
+}
 
 @media screen and (max-width: 600px) {
     .main-nav {
@@ -136,15 +160,12 @@ main {
     .main-section {
     width: calc(100% - (45px));
     }   
+
+    .main-call-action {
+    width: calc(100% - (45px));
+    }
 }
 
-.main-call-action {
-    width: calc(100% - (20%));
-    height: 20%;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(0, 0, 0, 0.4);
-}
 
 
 footer {
