@@ -113,7 +113,7 @@ main {
     height: 100%;
     background-color: black;
     min-height: 40%;
-    color: white;
+    color: rgb(255, 255, 255, 0.4);
     line-height: 30px;
 }
 
@@ -124,14 +124,36 @@ main {
     background-color: black;
 }
 
-.home {
-    padding-left: 1em;
-    border-left: 3px solid salmon;
-}
-
 .logo {
     width: 65%;
+    padding: 1em;
 }
+
+.home {
+    padding-left: 1em;
+}
+
+.home:hover {
+    border-left: 3px solid yellowgreen;
+    color: white;    
+}
+
+.cerca:hover {
+    border-left: 3px solid yellowgreen;
+    color: white;    
+}
+
+.library:hover {
+    border-left: 3px solid yellowgreen;
+    color: white;    
+}
+
+
+.home,.cerca,.library {
+    padding-left: 1em;
+}
+
+
 
 
 .casetta,.lib,.search {
@@ -143,8 +165,16 @@ main {
     margin-bottom: 1em;
 }
 
+.playlist {
+    padding-left: 1em;
+}
+
+.title-cat-playlist {
+    color: white;
+}
+
 .fa-plus-square {
-    font-size: 200%;
+    font-size: 230%;
 }
 
 .nomeplaylist li {
@@ -152,7 +182,7 @@ main {
 }
 
 .nomeplaylist {
-    height: 250px;
+    height: 200px;
     overflow: auto;
 }
 
