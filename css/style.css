@@ -241,7 +241,6 @@ main {
     overflow: auto;
     padding-top: calc(var(--playerheight) + (1em));
     padding-bottom: 2em;
-    display: flex;
 }   
 
 
