@@ -81,6 +81,8 @@ footer {
 
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgb(255, 255, 255, 0.4);
+
 }
 
 :root {
@@ -113,7 +115,6 @@ main {
     height: 100%;
     background-color: black;
     min-height: 40%;
-    color: rgb(255, 255, 255, 0.4);
     line-height: 30px;
 }
 
@@ -286,13 +287,14 @@ main {
 /* 600px, 700px e 1100px */
 /*SMARTPHONE*/
 
+/*      MAIN SECTION    */
 
 .container-lista-navigator {
     width: 100%;
+    height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
 
 .lista-navigator li {
@@ -302,10 +304,17 @@ main {
 }
 
 .lista-navigator a {
-    color: white;
     text-decoration: none;
     text-transform: uppercase;
 }
+
+/*      COPERTINE       */
+h2,h4 {
+    color: white;
+}
+
+
+
 
 
 
