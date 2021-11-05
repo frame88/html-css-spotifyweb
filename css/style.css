@@ -121,8 +121,9 @@ main {
 /*_____MAIN NAV TOP_____*/
 .main-nav-top {
     width: 100%;
-    height: 80px;
+    height: 80%;
     background-color: black;
+    overflow: auto;
 }
 
 .logo {
