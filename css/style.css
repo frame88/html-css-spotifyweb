@@ -292,13 +292,12 @@ main {
 .container-lista-navigator {
     width: 100%;
     height: 10%;
+    text-align: center;
+    display: block;
 }
 
 .lista-navigator {
-        display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+    display: block;
 }
 
 .lista-navigator li {
@@ -317,7 +316,9 @@ h2,h4 {
     color: white;
 }
 
-
+.copertina-1 {
+    width: calc(100% / 6);
+}
 
 
 
