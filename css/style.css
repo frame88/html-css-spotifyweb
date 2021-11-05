@@ -149,6 +149,7 @@ main {
 }
 
 .playlist {
+    height: 250px;
     overflow: auto;
 }
 
