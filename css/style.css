@@ -244,6 +244,7 @@ main {
 
 .ultimi-ascolti {
     display: flex;
+    margin-top: 1em;
 }
 
 .heavy {
@@ -265,6 +266,25 @@ main {
 h2 {
     color: white;
 }
+
+/*      DISCOVER WEEKLY     */
+.container-discover-weekly {
+    margin-top: 1em;
+}
+
+.heavy-dw{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 15%;
+    margin-right: 1%;
+}
+
+/*      POPOLAR ART     */
+.container-popolar-art {
+    margin-top: 1em;
+}
+
 
 footer {
     background: gray;
