@@ -163,7 +163,7 @@ main {
     float: left;
     width: calc(100% - (20%));
     height: 100%;
-    background-color: darkblue;
+    background-color: darkslategray;
     overflow: auto;
     padding-top: calc(var(--playerheight) + (1em));
     padding-bottom: 2em;
@@ -234,6 +234,7 @@ main {
 .lista-navigator a {
     text-decoration: none;
     text-transform: uppercase;
+    color: rgb(255, 255, 255, 0.4);
 }
 
 /*      COPERTINE       */
@@ -241,18 +242,24 @@ main {
     margin-left: 1em;
 }
 
+.ultimi-ascolti {
+    display: flex;
+}
 
 .heavy {
-    display: inline-block;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 1%;
 }
 
 .copertina {
-    width: 50%;
+    width: 100%;
 }
 
-.nome,.artista {
-    display: block;
+.nome {
+    color: white;
 }
 
 h2 {
