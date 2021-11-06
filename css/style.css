@@ -163,7 +163,7 @@ main {
     float: left;
     width: calc(100% - (20%));
     height: 100%;
-    background-color: rgb(14, 14, 24);
+    background-color: rgb(18, 18, 31);
     overflow: auto;
     padding-top: calc(var(--playerheight) + (1em));
     padding-bottom: 2em;
@@ -176,7 +176,7 @@ main {
     position: fixed;
     right: 0;
     top: 0;
-    background-color: rgb(14, 14, 24);
+    background-color: rgb(12, 12, 20);
     display: flex;
     justify-content: flex-end;
 }
@@ -237,7 +237,7 @@ main {
     color: rgb(255, 255, 255, 0.4);
 }
 
-/*      COPERTINE       */
+/*      RECENTLY PLAYED       */
 .container-ultimi-ascolti {
     margin-left: 1em;
 }
@@ -289,10 +289,58 @@ h2 {
     border-radius: 50%;
 }
 
+/*      FOOTER      */
 footer {
-    background: gray;
+    background: rgb(44, 44, 44);
     width: 100%;
     height: var(--playerheight);
+}
+
+.container-footer {
+    background: red;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    background: blue;
+    width: 15%;
+}
+
+.copertina-inascolto {
+    width: 20%;
+}
+
+.nome-inascolto {
+    width: 60%;
+}
+
+.add-favour {
+    width: 20%;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.center {
+    background: green;
+    width: 55%;
+}
+
+.right {
+    background: yellow;
+    width: 15%;
+
 }
 
 
