@@ -60,6 +60,10 @@ main {
     padding-left: 1em;
 }
 
+.home:hover {
+    border-left: 3px solid chartreuse;
+}
+
 .home,.cerca,.library {
     padding-left: 1em;
 }
@@ -186,24 +190,6 @@ main {
     margin-right: 0.5em;
     align-self: center;
 }
-
-/*SMARTPHONE*/
-
-@media screen and (max-width: 600px) {
-    .main-nav {
-        width: 45px;
-    }
-
-    .main-section {
-    width: calc(100% - (45px));
-    }   
-
-    .main-call-action {
-    width: calc(100% - (45px));
-    }
-}
-/* 600px, 700px e 1100px */
-/*SMARTPHONE*/
 
 /*      MAIN SECTION    */
 
@@ -487,6 +473,7 @@ footer {
 
 .nome-inascolto h6:hover {
     color: white;
+    text-decoration: underline;
 }
 
 .install span:hover {
@@ -517,11 +504,49 @@ footer {
     background:greenyellow;
 }
 
-.vol-bar-now:hover .pallino-vol {
+.vol-bar:hover .pallino-vol {
     display: block;
 }
 
-.time-bar-now:hover .pallino-time {
+.time-bar:hover .pallino-time {
     display: block;
 }
 
+/*      MEDIA QUERY     */  
+
+@media screen and (max-width: 600px) {
+    .main-nav {
+        width: 45px;
+    }
+
+    .main-section {
+    width: calc(100% - (45px));
+    }   
+
+    .main-call-action {
+    width: calc(100% - (45px));
+    }
+
+    .playlist {
+        display: none;
+    }
+
+    .category span {
+        display: none;
+    }
+
+    .casetta,.search,.lib {
+        width: 100%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-2 {
+        display: block;
+    }
+}
+
+
+/* 600px, 700px e 1100px */
