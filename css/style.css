@@ -357,14 +357,13 @@ footer {
 
 .player i{
     color: white;
-    font-size: 150%;}
-
+    font-size: 150%;
+}
 
 /*      RIGHT FOOTER        */
 .right {
     background: yellow;
     width: 15%;
-
 }
 
 
