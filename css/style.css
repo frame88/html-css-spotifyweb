@@ -189,6 +189,7 @@ main {
     border-radius: 25px;
     margin-right: 0.5em;
     align-self: center;
+    overflow: hidden;
 }
 
 /*      MAIN SECTION    */
@@ -274,6 +275,7 @@ footer {
     background: rgb(44, 44, 44);
     width: 100%;
     height: var(--playerheight);
+    overflow: hidden;
 }
 
 .container-footer {
@@ -296,23 +298,34 @@ footer {
 }
 
 .copertina-inascolto img {
-    width: 80%;
+    width: 100%;
 }
 
 
 .nome-inascolto {
     width: 40%;
+    overflow: hidden;
 }
 
-.nome-inascolto h4 {
+.sinister {
     color: white;
 }
 
+.brano {
+    font-size: 70%;
+}
+
+.sinister,.brano {
+    display: inline-block;    
+}
+
 .add-favour {
-    width: 40%;  
+    width: 20%;  
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     margin-right: 0.5em;
+    overflow: hidden;
 }
 
 .add-favour i{
@@ -394,6 +407,8 @@ footer {
     color: white;
     width: 40%;
     align-self: center;
+    display: flex;
+    overflow: hidden;
 }
 
 .icone-vol i {
@@ -471,7 +486,7 @@ footer {
     color: white;
 }
 
-.nome-inascolto h6:hover {
+.brano:hover {
     color: white;
     text-decoration: underline;
 }
@@ -543,8 +558,22 @@ footer {
         display: none;
     }
 
-    .logo-2 {
-        display: block;
+    .home,.cerca,.library {
+        padding: 0;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .fondo span{
+        display: none;
+    }
+
+    .fondo img {
+        width: 100%;
+    }
+
+    .ultimi-ascolti {
+        flex-wrap: wrap;
     }
 }
 
