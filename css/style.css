@@ -60,28 +60,9 @@ main {
     padding-left: 1em;
 }
 
-.home:hover {
-    border-left: 3px solid yellowgreen;
-    color: white;    
-}
-
-.cerca:hover {
-    border-left: 3px solid yellowgreen;
-    color: white;    
-}
-
-.library:hover {
-    border-left: 3px solid yellowgreen;
-    color: white;    
-}
-
-
 .home,.cerca,.library {
     padding-left: 1em;
 }
-
-
-
 
 .casetta,.lib,.search {
    width: 12%;
@@ -160,6 +141,10 @@ main {
 
 .user span, .install span {
     margin-left: 0.5em;
+}
+
+.user span {
+    color: white;
 }
 
 .usersvg {
@@ -406,6 +391,8 @@ footer {
     border-radius: 20px;
     align-self: center;
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -438,12 +425,103 @@ footer {
 }
 
 .vol-bar-now{
-    width: 22%;
+    width: 72%;
     height: 100%;
     background:white;
     border-radius: 20px;
     align-self: center;
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
 }
 
+.pallino-time {
+    background: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    align-self: center;
+    display: none;
+}
+
+.pallino-vol {
+    background: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    align-self: center;
+    display: none;
+}
+
+
+
+/*      HOVER       */
+
+.upgrade:hover {
+    color: white;
+    padding: 1.2em;
+    padding-left: 3.2em;
+    padding-right: 3.2em;
+}
+
+.lista-navigator a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.lista-navigator a:focus{
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid greenyellow;
+}
+
+.fa-play-circle:hover {
+    font-size: 120%;
+}
+
+.fa-folder:hover {
+    color: white;
+}
+
+.fa-heart:hover {
+    color: white;
+}
+
+.nome-inascolto h6:hover {
+    color: white;
+}
+
+.install span:hover {
+    color: white;
+}
+
+.nomeplaylist li:hover{
+    color: white;
+}
+
+.home:hover {
+    color: white;    
+}
+
+.cerca:hover {
+    color: white;    
+}
+
+.library:hover {
+    color: white;    
+}
+
+.time-bar-now:hover {
+    background:greenyellow;
+}
+
+.vol-bar-now:hover {
+    background:greenyellow;
+}
+
+.vol-bar-now:hover .pallino-vol {
+    display: block;
+}
+
+.time-bar-now:hover .pallino-time {
+    display: block;
+}
 
