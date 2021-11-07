@@ -130,7 +130,6 @@ main {
     display: flex;
     flow-direction: flex-end;
     align-items: flex-end;
-    padding: 1em;
 }
 
 .install img {
@@ -141,11 +140,22 @@ main {
     font-size: 80%;
 }
 
+.separator {
+    width: 85%;
+    height: 1px;
+    background:rgb(255, 255, 255, 0.4);
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
 .user,.install {
     display: flex;
     align-items: center;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .user span, .install span {
@@ -402,9 +412,38 @@ footer {
 
 /*      RIGHT FOOTER        */
 .right {
-    background: yellow;
     width: 20%;
+    display: flex;
+    margin-right: 1em;
 }
 
+.icone-vol {
+    color: white;
+    width: 40%;
+    align-self: center;
+}
+
+.icone-vol i {
+    margin-right: 0.6em;   
+    display: inline-block;
+}
+
+.vol-bar {
+    width: 60%;
+    height: 5%;
+    background:rgb(255, 255, 255, 0.4);
+    border-radius: 20px;
+    align-self: center;
+    position: relative;
+}
+
+.vol-bar-now{
+    width: 22%;
+    height: 100%;
+    background:white;
+    border-radius: 20px;
+    align-self: center;
+    position: absolute;
+}
 
 
